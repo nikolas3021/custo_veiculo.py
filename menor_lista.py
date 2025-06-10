@@ -1,15 +1,17 @@
-# Função para encontrar o menor número na lista de forma segura e eficiente
-def encontrar_menor(lista):
-    if not lista:  # Verifica se a lista não está vazia
-        raise ValueError("A lista não pode estar vazia")
-    return min(lista)  # Usa a função embutida `min()`
+# Definindo uma lista de números inteiros
+numeros = [10, 20, 30, 40, 50]
 
-# Lista de números
-numeros = [5, 3, 9, 1, 4]
+# Adicionando o número 60 à lista
+numeros.append(60)
 
-# Encontrando e exibindo o menor número na lista
-try:
-    menor_numero = encontrar_menor(numeros)
-    print("Menor número na lista:", menor_numero)
-except ValueError as e:
-    print("Erro:", e)
+# Exibindo a lista original
+print("Lista de números:", numeros)
+
+# Calculando e exibindo a soma dos elementos na lista
+print("Soma dos números:", sum(numeros))
+
+# Encontrando e exibindo o maior número na lista
+print("Maior número na lista:", max(numeros))
+
+# Calculando e exibindo a média dos elementos na lista
+print("Média dos números:", sum(numeros) / len(numeros))
